@@ -1,0 +1,11 @@
+name: Minha Primeira Automacao # Nome que aparecerá no GitHub
+on: # O Gatilho (Quando deve rodar)
+  push: # Sempre que houver um novo envio
+    branches: [ main ] # Apenas na branch principal
+
+jobs: # Lista de estações de trabalho
+  ola-mundo: # Nome da nossa estação
+    runs-on: ubuntu-latest # Máquina virtual Linux
+    steps: # Lista de tarefas do robô
+      - name: Executar Saudaçao # Nome da tarefa
+        run: echo "🚀 Automaçao MatrixCI funcionando com sucesso!" # O comando real
